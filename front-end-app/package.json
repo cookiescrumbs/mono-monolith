@@ -2,7 +2,7 @@
   "name": "front-end-app",
   "version": "0.0.0",
   "scripts": {
-    "serve": "docker-compose -f local/docker/dev.yml up",
+    "serve": "docker-compose -f ../.local/docker/dev.yml up",
     "dev:fe-app": "ng build front-end-app --aot --source-map --watch",
     "ng": "ng",
     "start": "ng serve",
