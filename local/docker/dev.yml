@@ -1,0 +1,12 @@
+version: '3'
+services:
+    mono-monolith:
+        image: nginx
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - ../nginx/config:/etc/nginx
+            - ../ssl:/var/www/ssl
+            - ../nginx/servers/dist/front-end-app.conf:/etc/nginx-servers/front-end-app.conf            
+            - ../../front-end-app/dist/front-end-app:/var/www/applications/front-end-app
