@@ -29,7 +29,7 @@ We use nginx to serve the front end app files from the `/dist`.
 To serve all the apps from the `dist` folder, we can run
 
 ```bash
-docker-compose -f .docker/dev.yml up
+docker-compose -f .local/docker/dev.yml up
 ```
 
 ```bash

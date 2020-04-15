@@ -1,0 +1,10 @@
+authorityKeyIdentifier=keyid,issuer
+basicConstraints=CA:FALSE
+keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = *.front-end-app.io
+DNS.2 = *.dev.front-end-app.io
+DNS.3 = *.stage.front-end-app.io
+DNS.4 = *.qa.front-end-app.io
